@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raushan Kumar | Software Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Personal portfolio of Raushan Kumar, B.Tech CSE Core student at Galgotias University. Showcasing Java, Python, and SQL projects.">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">RAUSHAN KUMAR</a>
+            
+            <nav class="nav-links" id="nav-links">
+                <a href="#about" class="nav-link">About & Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-btn">Get In Touch</a>
+            </nav>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-wrapper">
+
+        <section class="hero-section" id="hero">
+            <div class="hero-grid">
+                <div class="hero-text-content">
+                    <div class="location-badge">
+                        <span class="pin-icon">📍</span> Hails from Patna, Bihar
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="accent-text">Raushan Kumar</span>.
+                    </h1>
+                    <p class="hero-subtitle">
+                        I am a 4th-year student at <strong>Galgotias University</strong> pursuing my Bachelor of Technology in Computer Science & Engineering (B.Tech CSE Core, Batch 2023-2027). I build functional web applications and database systems using <strong>Java</strong>, <strong>SQL</strong>, and <strong>Web technologies</strong>.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View My Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+                    </div>
+                </div>
+                <div class="hero-image-content">
+                    <div class="profile-img-container">
+                        <img src="profile.png" alt="Raushan Kumar" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-container" id="about">
+            <h2 class="section-heading">About Me & My Toolbox</h2>
+            
+            <div class="about-grid">
+                <div class="about-card text-card">
+                    <h3>My Journey</h3>
+                    <p>
+                        I focus on core programming concepts, object-oriented design, and database schema structuring. I believe in writing well-organized, clean code to solve practical user problems.
+                    </p>
+                    <p style="margin-top: 15px;">
+                        Throughout my coursework, I have gained hands-on experience linking backend logics with relational databases. Along with my core programming skills, I hold foundational knowledge of AWS Cloud computing models.
+                    </p>
+                </div>
+
+                <div class="about-card skills-card">
+                    <h3>Technical Skills & Platforms</h3>
+                    
+                    <div class="skills-list">
+                        <div class="skill-category">
+                            <span class="category-name">Problem Solving & Programming</span>
+                            <div class="tags-container">
+                                <span class="skill-tag">Data Structures & Algorithms (DSA)</span>
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">Python (Mini-projects)</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <span class="category-name">Databases</span>
+                            <div class="tags-container">
+                                <span class="skill-tag">SQL Databases</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <span class="category-name">Cloud Infrastructure</span>
+                            <div class="tags-container">
+                                <span class="skill-tag">AWS Cloud Knowledge</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <span class="category-name">Web Development</span>
+                            <div class="tags-container">
+                                <span class="skill-tag">HTML5 & CSS3</span>
+                                <span class="skill-tag">JavaScript (Learning)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-footer">
+                        <span class="category-name" style="display: block; margin-bottom: 8px;">Coding Platforms</span>
+                        <a href="https://leetcode.com/u/Raushan0105/" class="leetcode-link" target="_blank" rel="noopener">
+                            <span class="leetcode-icon">⚡</span> Solved Challenges on LeetCode ↗
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-container" id="projects">
+            <h2 class="section-heading">Projects I've Developed</h2>
+            <p class="section-sub">A compilation of systems and utilities I've built during my academic semesters.</p>
+            
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-badge">Web Application</span>
+                    </div>
+                    <h3 class="project-title">Hydroponic Farming Portal</h3>
+                    <p class="project-description">
+                        An interactive system for city farmers. Includes user registration, crop grow decks, a community board to write thoughts, marketplace links, and AI guidance integration.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">SQL Database</span>
+                        <span class="tag">Web Dev</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-detail" onclick="openModal('hydroponics')">View System Details</button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-badge">Web Application</span>
+                    </div>
+                    <h3 class="project-title">Health Tracker & Planner</h3>
+                    <p class="project-description">
+                        A wellness portal where users create profiles, insert physical metrics to compute BMI, and receive customized meal suggestions, exercise guides, and lifestyle routines.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">SQL Database</span>
+                        <span class="tag">Web Dev</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-detail" onclick="openModal('health-tracker')">View System Details</button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-badge">Mini Project</span>
+                    </div>
+                    <h3 class="project-title">Python QR Code Generator</h3>
+                    <p class="project-description">
+                        A utility script developed during my 1st year of college. Takes text or URLs from user input and exports customized, shareable QR codes.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">1st Year Mini Project</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-detail" onclick="openModal('qr-generator')">View System Details</button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <span class="project-badge">Web Application</span>
+                    </div>
+                    <h3 class="project-title">Personal Portfolio Website</h3>
+                    <p class="project-description">
+                        A clean, minimalist developer profile designed to showcase my academic education, programming projects, solved LeetCode challenges, and virtual cloud internships.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">HTML5 & CSS3</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Responsive</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-detail" onclick="openModal('personal-portfolio')">View System Details</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section-container" id="education">
+            <h2 class="section-heading">Education History</h2>
+            
+            <div class="timeline">
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Batch 2023 - 2027 (Currently 4th Year)</span>
+                        <h3 class="timeline-title">B.Tech in Computer Science & Engineering (Core)</h3>
+                        <p class="timeline-institution">Galgotias University</p>
+                        <p class="timeline-desc">
+                            Engaging in core computer science tracks. Focused on Object-Oriented Programming, Relational Database Management Systems, Software Engineering, and Cloud architecture.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Academic Year 2021 - 2022</span>
+                        <h3 class="timeline-title">Higher Secondary Schooling (Class XII)</h3>
+                        <p class="timeline-institution">Kendriya Vidyalaya</p>
+                        <p class="timeline-desc">
+                            Completed senior secondary board certificates focusing on scientific studies, analytical reasoning, and mathematics.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Academic Year 2019 - 2020</span>
+                        <h3 class="timeline-title">Secondary Schooling (Class X)</h3>
+                        <p class="timeline-institution">Kendriya Vidyalaya</p>
+                        <p class="timeline-desc">
+                            Completed core secondary school board certificates with high marks in science, mathematics, and computers.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section-container" id="contact">
+            <div class="contact-card">
+                <div class="contact-header">
+                    <h2>Let's Connect!</h2>
+                    <p>Feel free to drop me a message, ask questions, or connect regarding software development roles.</p>
+                </div>
+                
+                <form id="contact-form" class="contact-form" onsubmit="submitForm(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="user-name-input">Your Name</label>
+                            <input type="text" id="user-name-input" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="user-email-input">Your Email</label>
+                            <input type="email" id="user-email-input" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="user-msg-input">Message</label>
+                        <textarea id="user-msg-input" rows="5" placeholder="Enter your message here..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary submit-btn">
+                        <span>Send Message 🚀</span>
+                    </button>
+                </form>
+
+                <div id="form-success" class="form-success-overlay">
+                    <div class="success-icon">📬</div>
+                    <h3>Message Sent!</h3>
+                    <p>Thank you for reaching out. I have received your message and will get back to you shortly.</p>
+                    <button class="btn btn-secondary" onclick="resetForm()">Send Another</button>
+                </div>
+            </div>
+
+            <div class="social-links-panel">
+                <a href="https://github.com/Raushan10012" class="social-icon-link" target="_blank" rel="noopener">
+                    <span class="social-icon">💻</span> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/raushan-kumar-7941782a7" class="social-icon-link" target="_blank" rel="noopener">
+                    <span class="social-icon">👔</span> LinkedIn
+                </a>
+                <a href="https://www.instagram.com/rudalkr__" class="social-icon-link" target="_blank" rel="noopener">
+                    <span class="social-icon">📸</span> Instagram
+                </a>
+                <a href="mailto:rkrudal123@gmail.com" class="social-icon-link">
+                    <span class="social-icon">✉️</span> Email Me
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>© 2026 Raushan Kumar. Handcrafted with HTML, CSS & JavaScript.</p>
+            <p class="footer-sub">B.Tech CSE Core Student • Galgotias University</p>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="details-modal">
+        <div class="modal-card">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <div class="modal-body" id="modal-content-area">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
