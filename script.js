@@ -10,7 +10,8 @@ const projectsDb = {
             "<strong>AI Grow Helper:</strong> Guided dialog boxes to help troubleshoot root rot and select compatible crops.",
             "<strong>Java & SQL Backend:</strong> Structured tables mapping user accounts, crop guidelines, and board replies."
         ],
-        tags: ["Java", "SQL Database", "HTML/CSS/JS", "AI Helper"]
+        tags: ["Java", "SQL Database", "HTML/CSS/JS", "AI Helper"],
+        liveUrl: "https://raushan10012.github.io/hydrofarming/"
     },
     'health-tracker': {
         title: "Health Tracker & Routine Planner",
@@ -22,7 +23,8 @@ const projectsDb = {
             "<strong>Diagnostic Planner:</strong> Generates structured diet reports indicating food recommendations and workout cards.",
             "<strong>SQL Progress Logs:</strong> Relational tables storing daily logs of weight and routines."
         ],
-        tags: ["Java", "SQL Database", "HTML/CSS/JS"]
+        tags: ["Java", "SQL Database", "HTML/CSS/JS"],
+        liveUrl: "https://raushan10012.github.io/Health-Tracker/"
     },
     'qr-generator': {
         title: "Python QR Code Generator",
@@ -46,7 +48,23 @@ const projectsDb = {
             "<strong>Platform Integration:</strong> Links solved LeetCode challenges, social networks, and email clients directly.",
             "<strong>Postcard Contact Widget:</strong> Client-side message dispatcher featuring customized validation and successful delivery animations."
         ],
-        tags: ["HTML5", "CSS3", "JavaScript", "Responsive Design"]
+        tags: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
+        liveUrl: "https://raushan10012.github.io/personal-portfolio2.0/"
+    },
+    'scms': {
+        title: "Student Complaint Management System (SCMS)",
+        domain: "HTML5, CSS3 & JavaScript (ES6)",
+        timeline: "Academic Semester Project (4th Year)",
+        overview: "A premium, fully responsive support ticketing platform allowing students to register and submit academic/infrastructure complaints, track real-time resolution timelines, and view administrative replies. Includes an interactive administrator dashboard with statistics, Chart.js diagrams, and status management.",
+        architecture: [
+            "<strong>Student Dashboard:</strong> Features real-time statistics cards (Total, Pending, Resolved cases) and records listings.",
+            "<strong>Admin Management Panel:</strong> System-wide control panel allowing administrators to filter complaints, analyze status divisions through dynamic doughnut charts, change ticket progress status, and provide comments/remarks.",
+            "<strong>Clean UI Design:</strong> Styled with Outfit typography, glassmorphism, responsive grids, and transitions.",
+            "<strong>Self-Contained Local Database:</strong> Implemented purely client-side using browser `localStorage` as a mock database engine (equipped with auto-seeding mock data), allowing 1-click deployment on GitHub Pages without requiring Tomcat or MySQL setup."
+        ],
+        tags: ["HTML5", "CSS3", "JavaScript (ES6)", "LocalStorage", "Chart.js", "Responsive Design"],
+        repoUrl: "https://github.com/Raushan10012/Complaint-Managment-System",
+        liveUrl: "https://raushan10012.github.io/Complaint-Managment-System/"
     }
 };
 
@@ -122,7 +140,8 @@ function openModal(projectId) {
 
         <div style="display: flex; gap: 12px; border-top: 1px solid #E5E7EB; padding-top: 20px;">
             <button class="btn btn-primary" onclick="closeModal()" style="padding: 8px 16px; font-size: 0.85rem;">Close Details</button>
-            <a href="#" class="btn btn-secondary" target="_blank" rel="noopener" style="padding: 8px 16px; font-size: 0.85rem;">Code Repository ↗</a>
+            <a href="${project.repoUrl || '#'}" class="btn btn-secondary" target="_blank" rel="noopener" style="padding: 8px 16px; font-size: 0.85rem;">Code Repository ↗</a>
+            ${project.liveUrl ? `<a href="${project.liveUrl}" class="btn btn-primary" target="_blank" rel="noopener" style="padding: 8px 16px; font-size: 0.85rem; background: linear-gradient(135deg, #10B981 0%, #059669 100%); border: none; text-decoration: none; display: inline-flex; align-items: center; color: white;">Live Demo ⚡</a>` : ''}
         </div>
     `;
 
