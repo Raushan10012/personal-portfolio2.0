@@ -156,19 +156,43 @@ function submitForm(event) {
     const submitBtn = form.querySelector('.submit-btn');
     const successCard = document.getElementById('form-success');
 
+    const name = document.getElementById('user-name-input').value;
+    const email = document.getElementById('user-email-input').value;
+    const message = document.getElementById('user-msg-input').value;
+
     const originalText = submitBtn.innerHTML;
     submitBtn.innerHTML = '<span>Sending message... ⏳</span>';
     submitBtn.style.opacity = '0.7';
     submitBtn.style.pointerEvents = 'none';
 
-    setTimeout(() => {
+    fetch('https://formsubmit.co/ajax/rkrudal123@gmail.com', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+            Name: name,
+            Email: email,
+            Message: message
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
         submitBtn.innerHTML = originalText;
         submitBtn.style.opacity = '1';
         submitBtn.style.pointerEvents = 'auto';
-
         form.reset();
         successCard.classList.add('show');
-    }, 1200);
+    })
+    .catch(error => {
+        submitBtn.innerHTML = '<span>Failed to send ❌</span>';
+        setTimeout(() => {
+            submitBtn.innerHTML = originalText;
+            submitBtn.style.opacity = '1';
+            submitBtn.style.pointerEvents = 'auto';
+        }, 2000);
+    });
 }
 
 function resetForm() {

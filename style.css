@@ -277,6 +277,10 @@ a {
     justify-content: space-between;
 }
 
+.about-card.text-card {
+    justify-content: flex-start;
+}
+
 .about-card h3 {
     font-size: 1.25rem;
     color: #111827;
